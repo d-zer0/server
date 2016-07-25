@@ -6,7 +6,7 @@ loop {
 	client.puts(Time.now.ctime)
 
 	input = client.gets
-	request = Request.new(input)
+	request = Request.new(input) # "unitialized constant Request (NameError)"
 
 	verb = request.get_verb
 	path = request.get_path
